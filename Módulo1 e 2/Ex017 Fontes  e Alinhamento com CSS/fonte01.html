@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            /* - Medidas Absolutas 
+            cm, mm, in(polegada), px, pt(ponto), pc(paica)
+            
+            - Medidas relativas
+            em(tamanho atual da fonte), ex(altura x de uma fonte), rem(fonte configurada no body), vw(largura do tamanho da tela em %), vh(altura da tela)
+            
+            Atenção: 16pc = 1em (geralmente)
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;
+            /* lighter, normal, bold, bolder (é necessário a fonte utilizada aceitar as fontes - e o guanabara ainda usou uma linha de "import" mas pediu para não usarmos, só no exer.018)
+            Atenção: é possível condensar essas 4 maneiras de modificar fontes com uma só propriedade "shorthand font",*/
+         
+        }
+
+        h1 {
+            /* exp. shorthand font: 
+            font-style -> font-weght -> font-size -> font-family (use sempre a ordem)*/
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magni, nostrum excepturi et amet natus eveniet nihil fugit dicta rerum corporis dolorem fugiat quas. Tempore natus sit officia quia blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nostrum veritatis eum at molestias quidem iusto ut! Nobis odit modi laboriosam earum soluta alias, voluptates omnis autem voluptatum tempore temporibus.</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quos similique assumenda sapiente, consequatur maiores dolorem voluptatem velit ratione tempora tenetur inventore quibusdam magni. Dicta corporis maiores aut quae ex! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni eaque obcaecati sequi accusamus officia tenetur ad ipsa deserunt, consectetur dignissimos harum molestiae asperiores voluptas vitae ex! Veniam labore dolor tempora.</p>
+</body>
+</html>

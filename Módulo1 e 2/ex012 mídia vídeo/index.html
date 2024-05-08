@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HtML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/video.mp4" controls width="560" poster="imagens/ pexels-zachary-debottis-1769553.jpg"con> <!-- importante configurar a largura, aqui foi em 560 -->
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.orv" type="video/ogg"> <!-- igualmente fizemos no index de áudio, a ordem importa e é necessário sempre ter no código o vídeo disponibilizado nos formatos caso o navegador dê pane, mas não coloquei por preguiça kkk -->   
+    </video>
+    
+    <p>Exemplo de frase caso nenhum formato suportado:seu navegador não tem compatibilidade com reprodução de vídeos <a href="midia/video.mp4">aqui</a></p>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=c8o16-Z8F4rn4TQi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- incorporação de cód. vídeo do yt-->
+
+        
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'tag';
+            src: url(aAnotherTag.otf) format(opentype);
+            font-weight: normal;
+            font-style: normal;
+            
+            /* Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (apple advanced typograph)
+                - svg
+            */
+        }
+        body {  
+            font-family: 'tag', Helvetica, sans-serif
+
+        }
+        h1 {
+            font-family: 'tag', Times, serif;
+            font-size: 5em;
+            /* Veja que apenas atribuindo o nome criado para nossa fonte no font-face ao font-family (o nome tag) ele já adiciona todos os atributos/estilos lá criados*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda officiis odio ipsum cumque similique eveniet, adipisci debitis dolore veniam soluta suscipit ratione voluptas, consequatur est ut necessitatibus deserunt voluptatibus sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque molestias odit natus culpa quo, aliquam architecto. Aliquid quidem dignissimos, exercitationem velit repellat assumenda architecto eaque omnis voluptatibus itaque in!</p>
+</body>
+</html>
