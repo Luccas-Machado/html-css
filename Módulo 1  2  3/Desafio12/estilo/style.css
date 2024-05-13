@@ -1,1 +1,85 @@
-@charset "UTF-8"
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps; 
+    /*
+     transforma tudo que estiver nessa função em maiúsculo
+     */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    /*
+    função de estilizar um elemento quando se passa o mouse por cima HOOOOOOVER!!!!
+    */
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* 
+    aqui criamos esse espaço nas sessões para que dê para fazer o parallax 
+    */
+    line-height: 2em;
+    /*
+    espaçando as letras para uma melhor leitura
+    */
+    padding-left: 30px;
+    /*
+    tirando as frases do canto esquerdo da tela para não ficar muito coladas lá
+    */
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(37, 35, 35);
+    color: white;
+
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.432);
+    /*
+    para onde for pasasr a imagem do parallax, não sumir o paragráfo (letras)
+    */
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: 10px;
+    padding: 10px;
+}
+
