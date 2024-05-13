@@ -1,19 +1,32 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;  
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray
+    background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 5vw;
 }
 
 header > h1 {
@@ -22,6 +35,7 @@ header > h1 {
     /*
      transforma tudo que estiver nessa função em maiúsculo
      */
+    font-family: var(--fonte2);
 }
 
 header > p {
@@ -55,6 +69,8 @@ section {
     /*
     tirando as frases do canto esquerdo da tela para não ficar muito coladas lá
     */
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
 }
 
 section.normal {
@@ -69,7 +85,11 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    /*
+    para a caixa ficar "presa", se adptando ao tamanho do seu conteúdo
+    */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.432);
     /*
     para onde for pasasr a imagem do parallax, não sumir o paragráfo (letras)
