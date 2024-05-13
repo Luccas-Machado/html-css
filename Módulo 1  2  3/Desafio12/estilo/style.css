@@ -73,6 +73,11 @@ section {
     font-size: 2.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
+
 section.normal {
     background-color: white;
     color: black;
@@ -81,7 +86,15 @@ section.normal {
 section.imagem {
     background-color: rgb(37, 35, 35);
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgb(24, 23, 23);
+    background-size: cover;
+    /*
+    Essa propriedade é útil quando você quer garantir que uma imagem de plano de fundo preencha completamente o espaço disponível, sem distorções, independentemente do tamanho do elemento pai. (que no caso é o texto).
+    */
+    background-attachment: fixed;
+    /*
+    com essa propriedade conseguimos fazer o parallax, pois a imagem de fundo ficará presa em relação ao conteúdo do site. 
+    */
 }
 
 section.imagem > p {
@@ -89,12 +102,26 @@ section.imagem > p {
     /*
     para a caixa ficar "presa", se adptando ao tamanho do seu conteúdo
     */
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.432);
     /*
-    para onde for pasasr a imagem do parallax, não sumir o paragráfo (letras)
+    para onde for passar a imagem do parallax, não sumir o paragráfo (letras)
     */
+    padding: 5px;
+    background-color: rgba(17, 16, 16, 0.678); 
+    text-shadow: 1px 1px 0px black;
 }
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+/*
+Não se esqueça # = ID
+*/
 
 footer {
     background-color: #000000;
