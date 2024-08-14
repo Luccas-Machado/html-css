@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Queriy</title>
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><!--CSS fornecido pelo google, correspondente "span" que está logo abaixo da tag <h1> -->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -12,7 +13,8 @@
     </header>
     <main>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span><!-- Mudando o nome do meio "menu" para os correspondentes no site material.io, você mudará o ícone, for exemple "face", "favorit" e etc.-->      
+        <menu id="itens">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -21,7 +23,7 @@
                 <li><a href="#">opção 5</a></li>
             </ul>
         </menu>
-    </main>
+    
         <article>
             <h2>Testando Media QUeries</h2>
             <p>
@@ -32,5 +34,17 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quidem illo atque ex ipsum laborum maxime rem quo consequuntur ipsa amet libero facilis totam quisquam eos, facere possimus voluptatem reiciendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quis qui, ipsam ullam maxime ipsum dolores minima architecto cumque corrupti eum voluptates magni perferendis cupiditate? Tempore repellendus in accusamus ea? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo deserunt voluptates natus ducimus quam, quos tempora cumque! Labore laborum voluptas distinctio minus doloribus amet est quod qui ratione, tenetur at?</p>
             </p>
         </article>
+    </main>
+    <SCript>
+        function clickMenu() {
+            if/*SE*/ (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            /* em JS esse "=" significa "RECEBE" 
+                Já o "==" significa "IGUAL"     */
+            } else/*SE NÃO*/ {
+                itens.style.display = 'block'
+            }
+        }
+    </SCript>
 </body>
 </html>
